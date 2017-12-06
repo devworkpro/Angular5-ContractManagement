@@ -1,0 +1,23 @@
+<div class="col-md-12 pdng">
+  <div class="fld-blow pro">Please Select your Kryptonforce Plan Below.</div>
+  <form #planForm="ngForm" (ngSubmit)="submitPlanForm(planForm.value)">
+    <div class="row space-btm">
+      <div class="col-sm-3" *ngFor="let plan of Plans">
+        <div class="box-o">
+          <h3>{{plan.name}}</h3>
+          <div class="brder-btm"></div>
+          <p>From <span>${{plan.amount/100}}</span> Per {{plan.interval}}</p>
+          <input type="radio" name="plan_id" value="{{plan.id}}" [(ngModel)]="registerViewModel.plan_id" required>
+          <p class="click">Plan Detail (<span>click here</span>) </p>
+          <!-- <div class="validation" *ngIf="formErrors.plan_id">
+            {{ formErrors.plan_id }}
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-sm-12 tp btnss">
+      <button class="next-stp" type="button" (click)="BacktoPlanTab()">Previous step</button>
+      <button type="submit" class="next-stp btn btn-default btn-primary" [disabled]="planForm.form.invalid">Next Step</button>
+    </div>
+  </form>
+</div>

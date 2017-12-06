@@ -1,0 +1,105 @@
+*{margin:0; padding:0;}
+#wrapper{width:100%;}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/**  BUTTON STYLE  **/
+.btn100 {
+    width: 100%;
+}
+.btn {
+    border-radius: 8px;
+    height: 60px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.btn-green {
+    background-color: #39d52d;
+    color: #ffffff;
+}
+.btn-white {
+    background-color: #ffffff;
+    color: #414345;
+    padding-top: 10px;
+}
+
+.bg_blue{
+	background-color: #323a45;
+}
+.login_section{
+	max-width: 420px;
+	width: 100%;
+	margin: 50px auto;	
+    color: #cbcdd0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.login_main .form-control{
+	border: 1px solid transparent;
+    box-shadow: none;
+    padding: 5px;
+}
+.login_main .input-group-addon {
+    background-color: #fff;
+    border-width: 0 4px 0 0;
+    border-style: solid;
+    border-color: #39d52d; 
+    padding-right: 7px;
+}
+.login_main {
+    border: 3px solid #39d52d;
+    border-radius: 8px;
+    padding: 40px 30px;
+}
+.login_section p {
+    line-height: 22px;
+}
+.login_section .input-group {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.login_section .fa {
+    font-size: 30px;
+    color: #d0d4d8;
+}
+.login_verify_icons a {
+    padding: 0 7px;
+}
+.login_verify_icons {
+    margin-bottom: 30px;
+}
+.logo {
+    margin-bottom: 20px;
+}
+.login_main p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.login_note {
+    margin-top: 20px;
+}
+.login_section .login_note {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 29px !important;
+}
+label {
+    margin-bottom: .2rem;
+}
+.validation{
+  color:#8B1A1A;
+}
+.loading{
+    background-color: #323a45;
+
+    text-align: center;
+}
+.loading-icon img {
+    width: 100%;
+    text-align: center;
+}
+.smscode_field{
+    width: 100%;
+}

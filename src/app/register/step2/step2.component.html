@@ -1,0 +1,127 @@
+<div class="col-md-12 pdng" *ngIf="AdvancedForm">
+  <form #step2Form="ngForm" (ngSubmit)="submitAdvForm1(step2Form.value)">
+    <div class="fld-blow">Please fill out all fields below.</div>
+    <div class="row">
+      <div class="form-group col-sm-6 tp">
+        <label for="coperate_add">Coperate Address</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-building" aria-hidden="true"></i></div>
+          <input type="text" name="coperate_add" class="form-control" id="coperate_add" [(ngModel)]="registerViewModel.coperate_add"
+            required>
+        </div>
+        <div class="validation" *ngIf="formErrors.coperate_add">
+          {{ formErrors.coperate_add }}
+        </div>
+      </div>
+      <div class="form-group col-sm-6 tp">
+        <label for="city">City</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-building" aria-hidden="true"></i></div>
+          <input type="text" name="city" class="form-control" id="city" [(ngModel)]="registerViewModel.city" required>
+        </div>
+        <div class="validation" *ngIf="formErrors.city">
+          {{ formErrors.city }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6 tp">
+        <label for="state">State</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-university" aria-hidden="true"></i></div>
+          <input type="text" name="state" class="form-control" id="state" [(ngModel)]="registerViewModel.state" required>
+        </div>
+        <div class="validation" *ngIf="formErrors.state">
+          {{ formErrors.state }}
+        </div>
+      </div>
+      <div class="form-group col-sm-6 tp">
+        <label for="phone_no">Phone Number</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+          <input type="text" name="phone_no" class="form-control" id="phone_no" [(ngModel)]="registerViewModel.phone_no" required name="phone_no" pattern="[0-9]*">
+        </div>
+        <div class="validation" *ngIf="formErrors.phone_no">
+          {{ formErrors.phone_no }}
+        </div>
+        <div class="validation" *ngIf="formErrors.phone_no && formErrors.phone_no.pattern">
+          {{ formErrors.phone_no }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6 tp">
+        <label for="password">Password</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+          <input type="password" name="password" minlength="8" class="form-control" id="password" [(ngModel)]="registerViewModel.password" required>
+        </div>
+        <div class="validation" *ngIf="formErrors.password">
+          {{ formErrors.password }}
+        </div>
+      </div>
+      <div class="form-group col-sm-6 tp">
+        <label for="confirm_pass">Confirm Password</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+          <input type="password" name="confirm_pass" class="form-control" id="confirm_pass" [(ngModel)]="registerViewModel.confirm_pass"
+            (focus)="Confirmpassword($event)" required>
+        </div>
+        <div><span id="confirm_password" class="validation"></span></div>
+        <div class="validation" *ngIf="formErrors.confirm_pass">
+          {{ formErrors.confirm_pass }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6 tp GNDR">
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="male" [(ngModel)]="registerViewModel.gender"
+          required>
+        <label for="test1">Male</label> 
+        <input type="radio" name="gender" value="female" [(ngModel)]="registerViewModel.gender" >
+        <label for="test2">Female</label>
+        <input type="radio" name="gender" value="other" [(ngModel)]="registerViewModel.gender">
+        <label for="test3">Other</label>
+        <div class="validation" *ngIf="formErrors.gender">
+          {{ formErrors.gender }}
+        </div>
+      </div>
+      <div class="form-group col-sm-6 tp">
+        <label>Terms of Service</label>
+        <div class="clearfix"></div>
+        <input type="checkbox" name="terms" class="rd" id="test4" value="" [(ngModel)]="registerViewModel.terms" required>
+        <label for="test4"></label>
+        <div> <span class="t_c"> Terms of Service text information to be filled in later with link to terms. By checking
+         this box you agree to all terms.</span></div>
+        <div class="validation" *ngIf="formErrors.terms">
+          {{ formErrors.terms }}
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-sm-12 tp btnss">      
+      <button class="next-stp" type="button" (click)="movetoBasic()">Previous step</button>
+      <button type="submit" class="next-stp btn btn-default btn-primary" [disabled]="step2Form.form.invalid">Next Step</button>
+    </div>
+  </form>
+</div>
+
+<div class="col-md-12 pdng" *ngIf="ProfilePicForm">
+  <div class="fld-blow pro">Please upload a profile picture of your headshot. This will be used as your gavatar(Required).</div>
+  <form #step2Form="ngForm" (ngSubmit)="submitAdvForm1(step2Form.value)">
+    <div class="form-group col-sm-12 upload text-center">
+      <input class="uplod" type="file" (change)="fileChanged($event)" name="profile_pic" accept="image/*" [(ngModel)]="registerViewModel.profile_pic"
+        required>
+      <span class="" id="file_name"></span>
+
+      <button class="upl">Upload</button>
+      <div class="validation" *ngIf="formErrors.profile_pic">
+        {{ formErrors.profile_pic }}
+      </div>
+    </div>
+    <div class="form-group col-sm-12 tp btnss">
+      <button class="next-stp" type="button" (click)="BacktoAdv1()">Previous step</button>
+      <button type="submit" class="next-stp btn btn-default btn-primary" (click)="MovetoPlan()" [disabled]="step2Form.form.invalid">Next Step</button>
+    </div>
+  </form>
+</div>

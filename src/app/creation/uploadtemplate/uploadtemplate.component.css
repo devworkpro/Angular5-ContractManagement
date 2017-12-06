@@ -1,0 +1,143 @@
+.head{
+    background-color: #9599a0;
+    padding: 5px;
+}
+.logo-dash img {
+    width: 180px;
+}
+.serarc-bars input {
+    width: 100%;
+    margin-top: 11px;
+    border: 0;
+    border-radius: 8px;
+    padding: 2px 15px;
+}
+.icons-logouts i {
+    font-size: 29px;
+    padding: 8px;
+    color: #fff;
+}
+.fa.fa-sign-out {
+    font-size: 16px !important;
+}
+.icons-logouts {
+    text-align: right;
+    float: right;
+   display: inline-flex;
+}
+.dropdown-menu.logg {
+    padding: 7px;
+    right: 15px !important;
+    float: left;
+    min-width: 100px;
+    background:#1d2128;
+    color:#fff!important;
+    left: -60px !important;
+}
+.logg::after {
+    content: "";
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 13px solid #1d2128;
+    position: absolute;
+    margin-top: -16px;
+    right: 7px;
+}
+.dropdown-menu.logg a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.fa.fa-user-circle{
+    color:#d0d4d8 !important;
+}
+.fa.fa-bell {
+    font-size: 20px !important;
+   
+}
+.logoutt {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+/*modal*/
+.modal-content.Application-menu {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 33px 25px;
+}
+.Application-menu h3 {
+    color: #5e5e5e;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.icon-boxxx[_ngcontent-c1] {
+    height: 100px;
+    width: 100px;
+    background: #39d52d;
+    border-radius: 50%;
+    text-align: center;
+   padding: 25px 22px;
+    margin:0 auto;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.th-icons {
+    color: #545556;
+    font-size: 16px;
+}
+.app-menu .col-sm-4 {
+    padding-bottom: 10px;
+}
+/*upload file css*/
+ .box-doc{
+
+border-radius: 8px;
+margin: 10px 0;
+}
+.box-doc h5{
+    color:#5e6163;
+    background-color: #1d2128;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.back-gd-area{
+    background-color:#323a45;
+}
+.temp {
+    width:157px;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    padding: 30px 0;
+}
+.ticons {
+    color: #fff;
+    font-size: 11px;
+}
+.uload-btn {
+    padding: 52px;
+    background: #6b727a;
+    width: 47%;
+    text-align: center;
+    border: 4px dashed #39d52d;
+    border-radius: 40px;
+    margin: 30px 0;
+}
+
+.btn.btn-primary.uploade-file {
+    background:  #39d52d;
+    padding: 12px 100px;
+    border: 0;
+    font-size: 19px;
+}
+.upload-area p {
+    color: #fff;
+    margin: 15PX 0 0;
+}
+.copy p{
+    color:#fff;
+}
+/*end*/

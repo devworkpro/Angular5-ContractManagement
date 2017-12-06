@@ -1,0 +1,122 @@
+<div class="head">
+   <!-- header-start -->
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-sm-2 pointer" [routerLink]="['/dashboard']">
+            <div class="logo-dash">
+               <img src="assets/images/logo-dash.png" alt="logo">
+            </div>
+         </div>
+         <div class="col-sm-8">
+            <div class="serarc-bars">
+               <input type="text" name="serch">
+            </div>
+         </div>
+         <div class="col-sm-2 ">
+            <div class="icons-logouts">
+               <i class="fa fa-th" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+               <i class="fa fa-bell" aria-hidden="true"></i>
+               <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle logoutt" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-user-circle" aria-hidden="true"></i>  
+                  </button>
+                  <div class="dropdown-menu logg" aria-labelledby="dropdownMenuButton">
+                     <a class="dropdown-item" (click)="Logout()" href="/login"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                     Log out</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content Application-menu">
+               <h3>Application Menu</h3>
+               <div class="row text-center app-menu">
+                  <div class="col-sm-4" [routerLink]="['/dashboard']">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/1.png">
+                     </div>
+                     <span class="th-icons">Dashboard</span>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <a href="/creation"><img src="assets/images/2.png"></a>
+                     </div>
+                     <span class="th-icons">Creation</span>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/3.png">
+                     </div>
+                     <span class="th-icons">Document</span>
+                  </div>
+               </div>
+               <div class="row text-center app-menu">
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/4.png">
+                     </div>
+                     <span class="th-icons">Contect</span>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/5.png">
+                     </div>
+                     <span class="th-icons">Templates</span>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/6.png">
+                     </div>
+                     <span class="th-icons">Contracts</span>
+                  </div>
+               </div>
+               <div class="row text-center app-menu">
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/7.png">
+                     </div>
+                     <span class="th-icons">Enterprise</span>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/8.png">
+                     </div>
+                     <span class="th-icons">Communication</span>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/9.png">
+                     </div>
+                     <span class="th-icons">Forms</span>
+                  </div>
+               </div>
+               <div class="row text-center app-menu">
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/10.png">
+                     </div>
+                     <span class="th-icons">Settings</span>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/11.png">
+                     </div>
+                     <span class="th-icons">BlockChain</span>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="icon-boxxx">
+                        <img src="assets/images/12.png">
+                     </div>
+                     <span class="th-icons">Module</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal-END -->
+   </div>
+</div>
+<!-- head-closed -->
+

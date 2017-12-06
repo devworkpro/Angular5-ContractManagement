@@ -1,0 +1,144 @@
+.head{
+    background-color: #9599a0;
+    padding: 5px;
+}
+.logo-dash img {
+    width: 180px;
+}
+.serarc-bars input {
+    width: 100%;
+    margin-top: 11px;
+    border: 0;
+    border-radius: 8px;
+    padding: 2px 15px;
+}
+.icons-logouts i {
+    font-size: 29px;
+    padding: 8px;
+    color: #fff;
+}
+.fa.fa-sign-out {
+    font-size: 16px !important;
+}
+.icons-logouts {
+    text-align: right;
+    float: right;
+   display: inline-flex;
+}
+.dropdown-menu.logg {
+    padding: 7px;
+    right: 15px !important;
+    float: left;
+    min-width: 100px;
+    background:#1d2128;
+    color:#fff!important;
+    left: -60px !important;
+}
+.logg::after {
+    content: "";
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 13px solid #1d2128;
+    position: absolute;
+    margin-top: -16px;
+    right: 7px;
+}
+.dropdown-menu.logg a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.fa.fa-user-circle{
+    color:#d0d4d8 !important;
+}
+.fa.fa-bell {
+    font-size: 20px !important;
+   
+}
+.logoutt {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+/*modal*/
+.modal-content.Application-menu {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 33px 25px;
+}
+.Application-menu h3 {
+    color: #5e5e5e;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.icon-boxxx {
+    height: 100px;
+    width: 100px;
+    background: #39d52d;
+    border-radius: 50%;
+    text-align: center;
+   padding: 25px 22px;
+    margin:0 auto;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.th-icons {
+    color: #545556;
+    font-size: 16px;
+}
+.app-menu .col-sm-4 {
+    padding-bottom: 10px;
+}
+/*creation-icon-css*/
+.creation-icon {
+    width: 500px;
+    margin: 0 auto;
+}
+.creation-background {
+    background: #323a45;
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+.creation-icon-div p {
+   color: #9ea2aa;
+font-size: 10px;
+margin-bottom: 26px;
+text-transform: uppercase;
+}
+.creation-icon-div span{
+    color:#fff;
+    font-size: 18px;
+}
+.creation-icon > p {
+    color: #fff;
+    font-size: 17px;
+    padding-bottom: 22px;
+}
+.creat-img {
+    padding: 22px;
+}
+
+.loading-icon img {
+    width: 117px;
+    padding-top: 14%;
+    display: block;
+    margin: 0 auto;
+}
+
+.loadinghalf{
+    text-align: center;
+    background-color: #323a45;
+
+}
+.loading-icon span {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 17px;
+    padding-top: 12px !important;
+    display: block;
+}
+
+.col-sm-2.pointer {
+    cursor: pointer;
+}

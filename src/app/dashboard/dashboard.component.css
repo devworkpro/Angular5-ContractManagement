@@ -1,0 +1,247 @@
+
+
+.inneer-section {
+    background-color: #323a45;
+    padding: 25px;
+}
+.action img {
+    float: left;
+    padding-right: 5px;
+    width: 48px;
+}
+.action{
+	color: #fff;
+}
+.action h3 {
+    font-size: 28px;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+.action span {
+    font-size: 11px;
+}
+.box-doc{
+background-color:#262c34;
+border-radius: 8px;
+margin: 10px 0;
+}
+.box-doc h5{
+	color:#5e6163;
+	background-color: #1d2128;
+	padding: 10px;
+	border-radius: 8px 8px 0 0;
+
+}
+.nav-link.sent.active {
+    background: #39d52d;
+    color: #fff!important;
+    padding: 3px 8px;    border-radius: 12px;
+    border:0;
+    margin-bottom: 10px;
+}
+.docss li a {
+    color: #5e6163;
+    font-size: 12px;
+    border:0;
+}
+.nav > li > a:focus, .nav > li > a:hover{
+	 background: #39d52d;
+	 color:#fff;
+	 border-radius: 12px;
+	
+}
+
+#profile-tab {
+    padding: 5px;
+}
+#contact-tab {
+    padding: 4px;
+}
+.docss li a:hover{
+	 background: #39d52d!important;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    border:0!important;
+}
+.docss
+{
+	border-bottom:1px solid #39d52d!important;
+	margin-left: 5px;
+	 padding: 6px;
+}
+.clint h6 {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+}
+.clint span{
+	color:#5e6163;
+	font-size: 10px;
+}
+.clint {
+    border: 2px solid #fff;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 7px;
+}
+#myTabContent {
+    padding: 6px;
+}
+.clint img {
+    float: left;
+    padding-right: 6px;
+}
+.templatess {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    margin: 5px 10px;
+}
+.templatess i{
+	color:#39d52d !important;
+	font-size: 18px;
+}
+.templatess span {
+    font-size: 12px;
+}
+.drop-menu {
+    text-align: center;
+}
+
+.live-box {
+    height: 252px;
+}
+
+i.fa.fa-caret-down {
+    color: #000;
+    font-size: 32px;
+}
+
+.iconss{
+	text-align: center;
+}
+.iconss img {
+    width: 38px;
+}
+.iconss span{
+	float: left;
+	color: #d0d4d8;
+}
+.live-box {
+    border: 2px solid #39d52d;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.live-box h4 {
+	   font-size: 14px;
+		margin: 0;
+		text-align: center;
+		font-weight: 600;
+}
+.live-box span {
+	font-size:11px;
+	text-align: center;
+}
+.progres-area{
+	min-height: 130px;
+}
+.Intellig{
+	padding: 18px!important;
+    padding-bottom: 9px !important;
+}
+.sec{
+	margin-top: 15px;
+    margin-bottom: 5px;
+}
+#live .col-sm-3 {
+    padding: 0 9px;
+}
+
+.Agreement{
+	text-align: center;
+	color: #606060;
+	background-color: #fff;
+	margin: 10px;
+	border-radius: 10px;
+	margin-top: 33px;
+	position: relative;
+    padding-bottom: 1px;
+}
+
+.Agreement span.frame {
+    height: 65px;
+    background-color: #000;
+    display: block;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.Agreement p {
+    font-size: 10px;
+    margin-top: 5px;
+    padding-top: 17px;
+   
+}
+.Agreement p span {
+   font-weight: 600px;
+   color:#000;
+}
+.btn.btn-light.view {
+    padding: 2px 12px;
+}
+.btn.btn-light.reply {
+    padding: 2px 12px;
+}
+.box-doc.commu {
+    padding-bottom: 15px;
+}
+.Agreement img {
+    position: absolute;
+    margin-top: -16px;
+    left: 41%;
+}
+.clintt {
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+}
+.views-btns.text-center {
+    border-bottom: 1px solid #39d52d;
+    padding-bottom: 20px;
+}
+.fa.fa-play{
+	color: #39d52d;
+}
+
+@media (max-width: 1350px){
+
+.action h3 {
+    font-size: 26px !important;
+ }
+
+}
+
+.loading-icon img {
+    width: 117px;
+    padding-top: 14%;
+    display: block;
+    margin: 0 auto;
+}
+
+.loadinghalf{
+    text-align: center;
+    background-color: #323a45;
+
+}
+.loading-icon span {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 17px;
+    padding-top: 12px !important;
+    display: block;
+}

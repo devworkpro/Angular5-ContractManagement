@@ -1,0 +1,385 @@
+<app-header></app-header>
+<div class="loadinghalf" *ngIf="loading">
+   <div class="loading-icon">
+      <img src="assets/images/loading.png">
+      <span>Loading...</span>
+   </div>
+</div>
+<div class="loadinghalf" *ngIf="loadinghalf">
+   <div class="loading-icon">
+      <img src="assets/images/loadingfinal.png">
+      <span>Loading...</span>
+   </div>
+</div>
+<div class="inneer-section" *ngIf="dashboard">
+   <!-- inner-section-start -->
+   <div class="top-areas">
+      <!-- top-area stat -->
+      <div class="row">
+         <div class="col-sm-2">
+            <div class="action">
+               <img src="assets/images/creation.png">
+               <h3>Creation</h3>
+               <span>Drag n Drop Building Tools</span>
+            </div>
+         </div>
+         <div class="col-sm-2">
+            <div class="action">
+               <img src="assets/images/contects.png">
+               <h3>Contacts</h3>
+               <span>Drag n Drop Building Tools</span>
+            </div>
+         </div>
+         <div class="col-sm-2">
+            <div class="action">
+               <img src="assets/images/documents.png">
+               <h3>Documents</h3>
+               <span>Drag n Drop Building Tools</span>
+            </div>
+         </div>
+         <div class="col-sm-2">
+            <div class="action">
+               <img src="assets/images/enterprise.png">
+               <h3>Enterprise</h3>
+               <span>Drag n Drop Building Tools</span>
+            </div>
+         </div>
+         <div class="col-sm-2">
+            <div class="action">
+               <img src="assets/images/templates.png">
+               <h3>Templates</h3>
+               <span>Drag n Drop Building Tools</span>
+            </div>
+         </div>
+         <div class="col-sm-2">
+            <div class="action">
+               <img src="assets/images/settings.png">
+               <h3>Settings</h3>
+               <span>Drag n Drop Building Tools</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- top-area colsed -->
+   <!-- document-analyist-area start -->
+   <div class="row">
+      <div class="col-sm-2">
+         <div class="box-doc">
+            <h5>Document Analytics</h5>
+            <ul class="nav nav-tabs docss" id="myTab" role="tablist">
+               <li class="nav-item">
+                  <a class="nav-link sent active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sent</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link vied" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Viewed</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link compl" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Completed</a>
+               </li>
+            </ul>
+            <div class="" id="">
+               <div class="" id="home" role="" aria-labelledby="">
+                  <div class="sent-img text-center">
+                     <img src="assets/images/21sent.png">
+                  </div>
+                  <div class="clint">
+                     <img src="assets/images/user.png">
+                     <h6>Tom Jones</h6>
+                     <span>NDA Contract Document</span>
+                  </div>
+                  <div class="clint">
+                     <img src="assets/images/user.png">
+                     <h6>Tom Jones</h6>
+                     <span>NDA Contract Document</span>
+                  </div>
+               </div>
+               <!--    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div> -->
+            </div>
+            <div class="drop-menu">
+               <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+         </div>
+         <div class="box-doc">
+            <h5>Templates</h5>
+            <div class="templatess">
+               <i class="fa fa-folder" aria-hidden="true"></i>
+               <span>NDA Templates</span>
+            </div>
+            <div class="templatess">
+               <i class="fa fa-folder" aria-hidden="true"></i>
+               <span>BAA Templates</span>
+            </div>
+            <div class="templatess">
+               <i class="fa fa-folder" aria-hidden="true"></i>
+               <span>Employee Templates</span>
+            </div>
+            <div class="templatess">
+               <i class="fa fa-folder" aria-hidden="true"></i>
+               <span>Authorization Templates</span>
+            </div>
+            <div class="templatess">
+               <i class="fa fa-folder" aria-hidden="true"></i>
+               <span>TIA Templates</span>
+            </div>
+            <div class="drop-menu">
+               <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-8">
+         <div class="box-doc">
+            <h5>Intelligent Content Management</h5>
+            <ul class="nav nav-tabs docss" id="myTab" role="tablist">
+               <li class="nav-item">
+                  <a class="nav-link sent active" id="home-tab" data-toggle="tab" href="#live" role="tab" aria-controls="home" aria-selected="true">Live Contracts</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link vied" id="profile-tab" data-toggle="tab" href="#Recent" role="tab" aria-controls="profile" aria-selected="false">Recent Activity</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link compl" id="contact-tab" data-toggle="tab" href="#Comple" role="tab" aria-controls="contact" aria-selected="false">Completed Contracts</a>
+               </li>
+            </ul>
+            <div class="tab-content Intellig" id="">
+               <div class="" id="live" role="tabpanel" aria-labelledby="home-tab">
+                  <!-- progress-area -->
+                  <div class="row">
+                     <div class="col-sm-3">
+                        <div class="live-box">
+                           <h4>Vendor Agreement V2</h4>
+                           <span>Sent - 11/09/2017 2:45pm PST</span>
+                           <div class="progres-area">
+                           </div>
+                           <div class="iconss">
+                              <span>
+                              <img src="assets/images/view.png"><br>
+                              View</span>
+                              <span>
+                              <img src="assets/images/edit.png"><br>
+                              Edit</span>
+                              <span>
+                              <img src="assets/images/print.png"><br>
+                              Print</span>
+                              <span>
+                              <img src="assets/images/save.png"><br>
+                              Save</span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                     <div class="col-sm-3">
+                        <div class="live-box">
+                           <h4>NDA Contract</h4>
+                           <span>Sent - 11/09/2017 2:45pm PST</span>
+                           <div class="progres-area">
+                           </div>
+                           <div class="iconss">
+                              <span>
+                              <img src="assets/images/view.png"><br>
+                              View</span>
+                              <span>
+                              <img src="assets/images/edit.png"><br>
+                              Edit</span>
+                              <span>
+                              <img src="assets/images/print.png"><br>
+                              Print</span>
+                              <span>
+                              <img src="assets/images/save.png"><br>
+                              Save</span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                     <div class="col-sm-3">
+                        <div class="live-box">
+                           <h4>BAA Document</h4>
+                           <span>Sent - 11/09/2017 2:45pm PST</span>
+                           <div class="progres-area">
+                           </div>
+                           <div class="iconss">
+                              <span>
+                              <img src="assets/images/view.png"><br>
+                              View</span>
+                              <span>
+                              <img src="assets/images/edit.png"><br>
+                              Edit</span>
+                              <span>
+                              <img src="assets/images/print.png"><br>
+                              Print</span>
+                              <span>
+                              <img src="assets/images/save.png"><br>
+                              Save</span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                     <div class="col-sm-3">
+                        <div class="live-box">
+                           <h4>Authorization Document </h4>
+                           <span>Sent - 11/09/2017 2:45pm PST</span>
+                           <div class="progres-area">
+                           </div>
+                           <div class="iconss">
+                              <span>
+                              <img src="assets/images/view.png"><br>
+                              View</span>
+                              <span>
+                              <img src="assets/images/edit.png"><br>
+                              Edit</span>
+                              <span>
+                              <img src="assets/images/print.png"><br>
+                              Print</span>
+                              <span>
+                              <img src="assets/images/save.png"><br>
+                              Save</span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- progress-area -->
+                  <!-- progress-area -->
+                  <div class="row sec">
+                     <div class="col-sm-3">
+                        <div class="live-box">
+                           <h4>Employee Contract</h4>
+                           <span>Sent - 11/09/2017 2:45pm PST</span>
+                           <div class="progres-area">
+                           </div>
+                           <div class="iconss">
+                              <span>
+                              <img src="assets/images/view.png"><br>
+                              View</span>
+                              <span>
+                              <img src="assets/images/edit.png"><br>
+                              Edit</span>
+                              <span>
+                              <img src="assets/images/print.png"><br>
+                              Print</span>
+                              <span>
+                              <img src="assets/images/save.png"><br>
+                              Save</span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                     <div class="col-sm-3">
+                        <div class="live-box">
+                           <h4>Shareholder Letter</h4>
+                           <span>Sent - 11/09/2017 2:45pm PST</span>
+                           <div class="progres-area">
+                           </div>
+                           <div class="iconss">
+                              <span>
+                              <img src="assets/images/view.png"><br>
+                              View</span>
+                              <span>
+                              <img src="assets/images/edit.png"><br>
+                              Edit</span>
+                              <span>
+                              <img src="assets/images/print.png"><br>
+                              Print</span>
+                              <span>
+                              <img src="assets/images/save.png"><br>
+                              Save</span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                     <div class="col-sm-3">
+                        <div class="live-box">
+                           <h4>Mutual NDA</h4>
+                           <span>Sent - 11/09/2017 2:45pm PST</span>
+                           <div class="progres-area">
+                           </div>
+                           <div class="iconss">
+                              <span>
+                              <img src="assets/images/view.png"><br>
+                              View</span>
+                              <span>
+                              <img src="assets/images/edit.png"><br>
+                              Edit</span>
+                              <span>
+                              <img src="assets/images/print.png"><br>
+                              Print</span>
+                              <span>
+                              <img src="assets/images/save.png"><br>
+                              Save</span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                     <div class="col-sm-3">
+                        <div class="live-box">
+                           <h4>PPM Agreement</h4>
+                           <span>Sent - 11/09/2017 2:45pm PST</span>
+                           <div class="progres-area">
+                           </div>
+                           <div class="iconss">
+                              <span>
+                              <img src="assets/images/view.png"><br>
+                              View</span>
+                              <span>
+                              <img src="assets/images/edit.png"><br>
+                              Edit</span>
+                              <span>
+                              <img src="assets/images/print.png"><br>
+                              Print</span>
+                              <span>
+                              <img src="assets/images/save.png"><br>
+                              Save</span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- progress-area -->
+                  <div class="drop-menu">
+                     <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-2">
+         <div class="box-doc commu">
+            <h5>Recent Communication</h5>
+            <div class="Agreement">
+               <img src="assets/images/user.png">
+               <p>Tim Smith Commented<br>on <span>“Vendor Agreement”</span></p>
+               <span class="clintt">“Andrew this looks great Can’t wait to get started working together with your company!”</span>
+            </div>
+            <div class="views-btns text-center">
+               <button type="button" class="btn btn-light view">View</button>
+               <button type="button" class="btn btn-light reply">Reply</button>
+            </div>
+            <div class="Agreement">
+               <img src="assets/images/user.png">
+               <p>James Smith Video Commented<br>on <span>“NDA Contract Version 3.2”</span></p>
+               <span class="frame"></span>
+            </div>
+            <div class="views-btns text-center">
+               <button type="button" class="btn btn-light view">View</button>
+               <button type="button" class="btn btn-light reply">Reply</button>
+            </div>
+            <div class="Agreement">
+               <img src="assets/images/user.png">
+               <p>Tim Smith Audio Commented<br>on <span>“BAA Document”</span></p>
+               <span class="music"><i class="fa fa-play" aria-hidden="true"></i>
+               </span>
+            </div>
+            <div class="views-btns text-center">
+               <button type="button" class="btn btn-light view">View</button>
+               <button type="button" class="btn btn-light reply">Reply</button>
+            </div>
+            <div class="drop-menu">
+               <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end -->
+</div>
+<!-- inner-area-background -->
+

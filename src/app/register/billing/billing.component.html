@@ -1,0 +1,51 @@
+`<div class="col-md-12 pdng">
+  <div class="fld-blow pro">Please Enter Your Payment Information Below.</div>  
+  <form novalidate (ngSubmit)="billingForm($event)" [formGroup]="stripeTest">
+    <div class="billing-zone text-center">
+      <h4>Plan Section <b>{{SelectedPlan.name}} Plan</b> - <span>${{SelectedPlan.amount/100}}/ Per {{SelectedPlan.interval}}</span></h4>      
+        <div class="dggd">
+          <div class="form-group row text-center bill" id="hj">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" formControlName="billing_name" required class="form-control" id="name-text" placeholder="Jane Doe">
+            </div>
+          </div>
+          <div class="form-group row text-center bill">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" formControlName="billing_phone" required id="phone-text" placeholder="(123) 456 789">
+            </div>
+          </div>
+        </div>
+        <!-- <div ngxErrors="username">
+    <div ngxError="required" [when]="['dirty', 'touched']">
+      Username is required
+    </div>
+  </div> -->
+        <div class="dggd">
+          <div class="form-group row text-center bill">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Card</label>
+            <div class="col-sm-10">
+              <!-- <input type="text" class="form-control" id="name-text" placeholder="card Number"> -->
+              <div id="card-element" class="field" #card></div>
+            </div>            
+          </div>
+        </div>
+        <div id="card-errors"></div>
+        <div class="recuring">
+          <h4>Recuring monthly payment Aggrement</h4>
+          <div class="radio-button">
+            <input type="checkbox" name="terms" formControlName="billing_policy" required class="rd" id="test4" value="">
+             <label for="test4"></label>
+            <p class="term-cond">
+            Aggrement information to be filled in later with link to term by checking this box you agree to all ths terms.
+            </p>
+          </div>
+        </div>      
+    </div>
+    <div class="form-group col-sm-12 tp btnss">
+      <button class="next-stp" type="button" (click)="BacktoPlan()">Previous step</button>
+      <button type="submit" class="next-stp btn btn-default btn-primary" [disabled]="stripeTest.invalid">Submit</button>    
+    </div>  
+  </form>
+</div>

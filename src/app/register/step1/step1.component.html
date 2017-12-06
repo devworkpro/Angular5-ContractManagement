@@ -1,0 +1,108 @@
+<form #step1Form="ngForm" (ngSubmit)="submitBasicForm(step1Form.value)">
+  <div class="col-md-12 pdng">
+    <div class="fld-blow">Please fill out all fields below.</div>
+    <div class="row">
+      <div class="form-group col-sm-6 tp">
+        <label for="first_name">First Name</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+          <input type="text" class="form-control" name="first_name" [(ngModel)]="registerViewModel.first_name" required>
+        </div>
+        <div class="validation" *ngIf="formErrors.first_name">
+          {{ formErrors.first_name }}
+        </div>
+      </div>
+      <div class="form-group col-sm-6 tp">
+        <label for="middle_name">Middle Name</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+          <input type="text" class="form-control" name="middle_name" [(ngModel)]="registerViewModel.middle_name" required>
+        </div>
+        <div class="validation" *ngIf="formErrors.middle_name">
+          {{ formErrors.middle_name }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6 tp">
+        <label for="last_name">Last Name</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+          <input type="text" class="form-control" name="last_name" [(ngModel)]="registerViewModel.last_name" required>
+        </div>
+        <div class="validation" *ngIf="formErrors.last_name">
+          {{ formErrors.last_name }}
+        </div>
+      </div>
+      <div class="form-group col-sm-6 tp">
+        <label for="dob">Date Of Birth</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+          <!-- <input type="date" name="dob" id="dob" class="form-control" [(ngModel)]="registerViewModel.dob" required> -->
+          <input type="text" class="form-control" [minDate]="minDate" [maxDate]="maxDate" #dp="bsDatepicker" bsDatepicker [(ngModel)]="registerViewModel.dob"
+            name="dob" data-date-format='yy-mm-dd' required>
+        </div>
+        <div class="validation" *ngIf="formErrors.dob">
+          {{ formErrors.dob }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6 tp">
+        <label for="email">Email Address</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          <input type="email" name="email" class="form-control" [(ngModel)]="registerViewModel.email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            (focus)="Checkmail($event)" />
+        </div>
+        <div><span id="databaseemail" class="validation"></span></div>
+        <div class="validation" *ngIf="formErrors.email">
+          {{ formErrors.email }}
+        </div>
+        <div class="validation" *ngIf="formErrors.email && formErrors.email.pattern">
+          {{ formErrors.email }}
+        </div>
+      </div>
+      <div class="form-group col-sm-6 tp">
+        <label for="confirm_email">Confirm Email Address</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          <input type="email" name="confirm_email" class="form-control" class="form-control" [(ngModel)]="registerViewModel.confirm_email"
+            id="cemail" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" (focus)="Confirmemail($event)">
+        </div>
+        <div><span id="Confirmemail" class="validation"></span></div>
+        <div class="validation" *ngIf="formErrors.confirm_email">
+          {{ formErrors.confirm_email }}
+        </div>
+        <div class="validation" *ngIf="formErrors.email && formErrors.email.pattern">
+          {{ formErrors.email }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6 tp">
+        <label for="company_name">Company Name</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-building" aria-hidden="true"></i></div>
+          <input type="text" name="company_name" class="form-control" [(ngModel)]="registerViewModel.company_name" required>
+        </div>
+        <div class="validation" *ngIf="formErrors.company_name">
+          {{ formErrors.company_name }}
+        </div>
+      </div>
+      <div class="form-group col-sm-6 tp">
+        <label for="job_title">Job Title</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i></div>
+          <input type="text" name="job_title" class="form-control" [(ngModel)]="registerViewModel.job_title" required>
+        </div>
+        <div class="validation" *ngIf="formErrors.job_title">
+          {{ formErrors.job_title }}
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-sm-12 text-right next-stp">
+      <button type="submit" id="step1-submit" class="btn btn-default btn-primary" [disabled]="step1Form.form.invalid">Next Step</button>
+    </div>
+  </div>
+</form>

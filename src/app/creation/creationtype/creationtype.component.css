@@ -1,0 +1,54 @@
+
+/*creation-icon-css*/
+.creation-icon {
+    width: 500px;
+    margin: 0 auto;
+}
+.creation-background {
+    background: #323a45;
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+.creation-icon-div p {
+   color: #9ea2aa;
+font-size: 10px;
+margin-bottom: 26px;
+text-transform: uppercase;
+}
+.creation-icon-div span{
+    color:#fff;
+    font-size: 18px;
+}
+.creation-icon > p {
+    color: #fff;
+    font-size: 17px;
+    padding-bottom: 22px;
+}
+.creat-img {
+    padding: 22px;
+}
+
+.loading-icon img {
+    width: 117px;
+    padding-top: 14%;
+    display: block;
+    margin: 0 auto;
+}
+
+.loadinghalf{
+    text-align: center;
+    background-color: #323a45;
+
+}
+.loading-icon span {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 17px;
+    padding-top: 12px !important;
+    display: block;
+}
+
+.creation-icon-div:hover {
+    background: #fff;
+    cursor: pointer;
+}

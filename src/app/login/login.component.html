@@ -1,0 +1,99 @@
+<div class="bg_blue" *ngIf="LoginForm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="login_section">
+          <div class="logo text-center">
+           <!--  <img src="images/logo.png" alt="Krypton Force logo"> -->
+          <img [src]="logoimgUrl" alt="Krypton Force logo">
+          </div>          
+          <jaspero-alerts [defaultSettings]="options"></jaspero-alerts>
+          <!-- logo -->
+          <div class="login_main">
+            <form #loginForm="ngForm">
+              <div class="form-group">
+                <label>Email Address</label>
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                  <input type="email" class="form-control" id="username" name="username" [(ngModel)]="username" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"/>                
+                </div>
+                <div *ngIf="formErrors.username" class="validation">
+                  {{ formErrors.username }}
+                </div>
+                <div *ngIf="formErrors.username && formErrors.username.pattern">
+                  {{ formErrors.username }}
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></div>                  
+                  <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" required
+                    [(ngModel)]="password" (keyup.enter)="Login(username,password)" />
+                </div>
+                <div *ngIf="formErrors.password" class="validation">
+                    {{ formErrors.password }}
+                  </div>
+              </div>
+              <p class="text-center">Please enter login credentials above <br/>or select two secure options below.</p>
+              <div class="login_verify_icons">
+                <a href="javascript:void(0)"><img [src]="icon1" alt="icon"></a>
+                <a href="javascript:void(0)"><img [src]="icon2" alt="icon"></a>
+                <a href="javascript:void(0)"><img [src]="icon3" alt="icon"></a>
+                <a href="javascript:void(0)"><img [src]="icon4" alt="icon"></a>
+              </div>
+              <button type="button" (click)="Login(username,password)" class="btn btn-green btn100" [disabled]="loginForm.form.invalid">Verify Access</button>
+              <a [routerLink]="['/register']" class="btn btn-white btn100">Sign Up</a>
+            </form>
+          </div>
+          <!-- login_main -->
+          <p class="login_note text-center">Please verifiy two forms <br/>of idenitification for access.</p>
+        </div>
+        <!-- login_section -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg_blue" *ngIf="SMSForm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="login_section">
+          <div class="logo text-center">
+           <!--  <img src="images/logo.png" alt="Krypton Force logo"> -->
+          <img [src]="logoimgUrl" alt="Krypton Force logo">
+          </div>          
+          <jaspero-alerts [defaultSettings]="options"></jaspero-alerts>
+          <!-- logo -->
+          <div class="login_main">
+            <form #loginForm="ngForm">
+              <div class="form-group">
+                <label>SMS Code</label>
+                <div class="input-group smscode_field">                                    
+                  <input type="text" class="form-control" maxlength="5" id="smscode" name="smscode" [(ngModel)]="smscode" required
+                    [(ngModel)]="smscode" (keyup.enter)="CodeloginForm(smscode)" />
+                </div>
+                <div *ngIf="formErrors.smscode" class="validation">
+                    {{ formErrors.smscode }}
+                  </div>
+              </div>
+              <p class="text-center">Please enter login credentials above <br/>or select two secure options below.</p>
+              <div class="login_verify_icons">
+                <a href="javascript:void(0)"><img [src]="icon1" alt="icon"></a>
+                <a href="javascript:void(0)"><img [src]="icon2" alt="icon"></a>
+                <a href="javascript:void(0)"><img [src]="icon3" alt="icon"></a>
+                <a href="javascript:void(0)"><img [src]="icon4" alt="icon"></a>
+              </div>
+              <button type="button" class="btn btn-green btn100" [disabled]="loginForm.form.invalid" (click)="CodeloginForm(smscode)">Verify Access</button>
+              <a [routerLink]="['/register']" class="btn btn-white btn100">Sign Up</a>
+            </form>
+          </div>
+          <!-- login_main -->
+          <p class="login_note text-center">Please verifiy two forms <br/>of idenitification for access.</p>
+        </div>
+        <!-- login_section -->
+      </div>
+    </div>
+  </div>
+</div>

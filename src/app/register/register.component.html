@@ -1,0 +1,55 @@
+<div class="bg_blue" >
+  <div class="logo text-center">
+    <img [src]="logoimgUrl" alt="Krypton Force logo">
+  </div>
+
+  <div class="container registeration_area">
+    <div class="regi_area">
+      <ul class="nav nav-tabs list">
+        <li id="menu_head1" class="active">
+          <a data-toggle="tab" href="#menu1">Basic</a>
+        </li>
+        <li id="menu_head2" class="disabled">
+          <a>Advanced</a>
+        </li>
+        <!-- <li id="menu_head3" class="disabled"><a>Biometric</a></li> -->
+        <li id="menu_head4" class="disabled">
+          <a>Plan</a>
+        </li>
+        <li id="menu_head5" class="disabled">
+          <a>Billing</a>
+        </li>
+        <li id="menu_head6" class="disabled">
+          <a>Summary</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="menu1" class="tab-pane fade in active">
+          <app-step1 (AfterBasic)="ChangeBasicForm($event)"></app-step1>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <app-step2 (AfterAdv)="ChangeAdvForm($event)"></app-step2>
+        </div>
+        <div id="menu4" class="tab-pane fade">
+          <app-plan (AfterPlan)="ChangePlanForm($event)"></app-plan>
+        </div>
+
+        <div id="menu5" class="tab-pane fade">
+          <app-billing [SelectedPlan]="UserSelectedPlan" (AfterBilling)="ChangeBillingForm($event)"></app-billing>
+        </div>
+
+        <div id="menu6" class="tab-pane fade">
+          <app-summary [Alldata]="Alldata" [userData]="getData"></app-summary>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container plr0">
+    <div class="progress">
+      <div class="progress-bar" id="ProgBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+        <span class="bar_text" id="ProgText"></span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css';
+
+.qrcode img {
+    width: 79px;
+    text-align: right;
+    float: right;
+    margin-top: -95px;
+    margin-right: 9px;
+    border: 1px solid #d7d7d7;
+}
+.id-box[_ngcontent-c6] img[_ngcontent-c6] {
+    margin-top: 62px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+

@@ -1,0 +1,74 @@
+<div class="col-md-12 pdng" *ngIf="SummrayForm">
+  <div class="fld-blow pro">Please Review the information below Below and press submit to finalize.</div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="facial-photo first text-center">
+        <!--  <img [src]="Alldata.imgPath" alt="photo" class="img-circle"> -->
+        <img src="http://localhost:8080/uploads/{{userData.profile_pic}}" class="img-circle">
+        <h4>Facial Recognisation Capture</h4>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="facial-photo sec text-center">
+        <img src="http://localhost:8080/uploads/{{userData.profile_pic}}" alt="photo">
+        <h4>Profile Gavitar</h4>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="facial-photo">
+        <p class="capital">Name: {{Alldata.first_name}}</p>
+        <p class="capital">Middle Name: {{Alldata.middle_name}}</p>
+        <p class="capital">Last Name: {{Alldata.last_name}}</p>
+        <p>DOB: {{Alldata.dob}}</p>
+        <p>Email Address: {{Alldata.email}}</p>
+        <p class="capital">Company Name: {{Alldata.company_name}}</p>
+        <p class="capital">Job Title: {{Alldata.job_title}}</p>
+        <p class="capital">Coporate Address: {{Alldata.coperate_add}}</p>
+        <p class="capital">City/State: {{Alldata.city}}, {{Alldata.state}}</p>
+        <p>Phone No.: {{Alldata.phone_no}}</p>
+        <p class="capital">Gender: {{Alldata.gender}}</p>
+        <p class="capital">
+          <b>{{Alldata.selectedPlan.name}} Plan: </b>
+          <span>${{Alldata.selectedPlan.amount/100}}/per {{Alldata.selectedPlan.interval}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="form-group col-sm-12 tp btnss">
+    <!-- <button class="next-stp" type="button" (click)="BacktoBilling()">Previous step</button> -->
+    <button type="submit" class="next-stp" (click)="ViewUser()">Next step</button>
+  </div> `
+</div>
+
+<div class="col-md-12" *ngIf="CongratulationsForm">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="congo-photo text-center">
+        <div class="id-box text-center bg-img">
+          <img src="http://localhost:8080/uploads/{{userData.profile_pic}}" alt="photo">
+          <div class="cde">
+            <ngx-qrcode [qrc-element-type]="elementType" [qrc-value]="QRCodeValue" cssClass="myqr">
+            </ngx-qrcode>
+          </div>
+          <h4 class="name">{{Alldata.first_name}} {{Alldata.middle_name}} {{Alldata.last_name}}</h4>
+          <p class="legal">LEGAL NAME</p>
+          <P class="bdo">{{Alldata.dob}}</P>
+          <P class="date">Date of birth</P>
+          <p class="email">{{Alldata.email}}</p>
+          <p class="email-add">Email Address</p>
+          <p class="id-no">*****{{Userid.substr(Userid.length - 5)}}</p>
+          <p class="govt-id">Goverment ID</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-7">
+      <div class="congratulations text-center">
+        <h2>Congratulations Your Kryption ID and account has now been created</h2>
+        <h2>Yours login details will be emailed to you shortly for activation. Thank You</h2>
+      </div>
+      <div class="login-btns text-center">
+        <button class="next-stp" type="button" (click)="login()">LOGIN</button>
+      </div>
+    </div>
+  </div>
+</div>
